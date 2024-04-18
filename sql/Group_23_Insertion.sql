@@ -69,3 +69,11 @@ INSERT INTO STAGE VALUES(
     '19/04/2022', '01/07/2022', 625, 'Ordinateur portable', 'Visual Studio Code, Docker', 'Windows 11, Serveur distant', 'JavaScript, Python', 
     'rempli', 'envoyé', 17, 15, 13, 18, 14, 17, 16, 18, 'Développement', 5, 998877665, 5);
 
+INSERT INTO STAGE VALUES(
+    6,'Conception, développement et évolution des produits Shortways', "Le but de cette mission est d'intégrer le stagiaire à notre équipe de 
+    Recherche et Développement. La mission comprendra des phases d'analyse (définition du besoin), de développement, de tests et d'intégration. 
+    Le stagiaire sera amené à travailler sur les différentes parties de notre solution logicielle ainsi que ses différents langages : 'front' (Javascript), 
+    serveur (Scala), base de données (MySQL, Redis), infrastructure (Docker, Kubernetes).", 
+    '11/05/2020', '24/07/2020', 596, 'Ordinateur portable', 'Visual Studio Code, Docker', 'Windows 11, Serveur distant', 'JavaScript, Python', 
+    'rempli', 'envoyé', 17, 15, 13, 18, 14, 17, 16, 18, 'Développement', 6, 445566778, 6);
+
