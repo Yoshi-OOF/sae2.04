@@ -1,9 +1,9 @@
-INSERT INTO ETUDIANT VALUES(1, 'Bertrand', 'Emma', '18 Rue de Troy', 'emma.bertrand.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 1);
-INSERT INTO ETUDIANT VALUES(2, 'Bertrand', 'Léo', '18 Rue de Troy', 'leo.bertrand.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 2);
-INSERT INTO ETUDIANT VALUES(3, 'Blanc', 'Jade', '18 Rue de Troy', 'jade.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 4);
-INSERT INTO ETUDIANT VALUES(4, 'Blanc', 'Lola', '18 Rue de Troy', 'lola.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 5);
-INSERT INTO ETUDIANT VALUES(5, 'Blanc', 'Nathan', '18 Rue de Troy', 'nathan.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 3);
-INSERT INTO ETUDIANT VALUES(6, 'Blanc', 'Romane', '18 Rue de Troy', 'romane.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 6);
+INSERT INTO ETUDIANT VALUES(1, 'Bertrand', 'Emma', '35 rue du Progrès', 'emma.bertrand.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 1);
+INSERT INTO ETUDIANT VALUES(2, 'Bertrand', 'Léo', '32 rue de Innovateurs', 'leo.bertrand.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 2);
+INSERT INTO ETUDIANT VALUES(3, 'Blanc', 'Jade', '48 rue des Navigateurs', 'jade.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 4);
+INSERT INTO ETUDIANT VALUES(4, 'Blanc', 'Lola', '18 rue de Troy', 'lola.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 5);
+INSERT INTO ETUDIANT VALUES(5, 'Blanc', 'Nathan', '47 impasse de la Sécurité', 'nathan.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 3);
+INSERT INTO ETUDIANT VALUES(6, 'Blanc', 'Romane', '12 rue des Gourmets', 'romane.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 6);
 
 INSERT INTO ENSEIGNANT VALUES(1, 'Vieillard', 'Nathalie', 'nathalie.vieillard@univ-lemans.fr', FALSE);
 INSERT INTO ENSEIGNANT VALUES(2, 'Ernet', 'Bruno', 'bruno.ernet@univ-lemans.fr', FALSE);
@@ -76,4 +76,12 @@ INSERT INTO STAGE VALUES(
     serveur (Scala), base de données (MySQL, Redis), infrastructure (Docker, Kubernetes).", 
     '11/05/2020', '24/07/2020', 596, 'Ordinateur portable', 'Visual Studio Code, Docker', 'Windows 11, Serveur distant', 'JavaScript, Python', 
     'rempli', 'envoyé', 17, 15, 13, 18, 14, 17, 16, 18, 'Développement', 6, 445566778, 6);
+
+INSERT INTO AVANTAGE VALUES(1, TRUE, TRUE, FALSE, "Bon 'achat", 1);
+INSERT INTO AVANTAGE VALUES(2, FALSE, TRUE, TRUE, 'Abonnement gym', 2);
+INSERT INTO AVANTAGE VALUES(3, TRUE, FALSE, TRUE, 'Carte de transport', 3);
+INSERT INTO AVANTAGE VALUES(4, TRUE, TRUE, TRUE, NULL, 4);
+INSERT INTO AVANTAGE VALUES(5, FALSE, FALSE, FALSE, 'Accès à des formations en ligne', 5);
+INSERT INTO AVANTAGE VALUES(6, TRUE, TRUE, FALSE, 'Participation à des conférences', 6);
+
 
