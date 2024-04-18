@@ -1,5 +1,4 @@
 USE Groupe_23;
-
 CREATE ROLE Secretaire;
 
 GRANT SELECT, UPDATE ON ENTREPRISE TO Secretaire;
@@ -36,9 +35,8 @@ CREATE VIEW vue_secretaire_enseignant AS
 SELECT Id_ensei, Nom_ensei, Prenom_ensei, Mail_ensei
 FROM ENSEIGNANT;
 
-GRANT SELECT ON vue_secretaire_maitre_stage TO secretary;
-GRANT SELECT ON vue_secretaire_superviseur TO secretary;
-GRANT SELECT ON vue_secretaire_enseignant TO secretary;
-GRANT SELECT ON vue_secretaire_etudiant TO secretary;
-GRANT SELECT ON vue_secretaire_stage TO secretary;
-
+GRANT SELECT ON vue_secretaire_maitre_stage TO Secretaire;
+GRANT SELECT ON vue_secretaire_superviseur TO Secretaire;
+GRANT SELECT ON vue_secretaire_enseignant TO Secretaire;
+GRANT SELECT ON vue_secretaire_etudiant TO Secretaire;
+GRANT SELECT ON vue_secretaire_stage TO Secretaire;
