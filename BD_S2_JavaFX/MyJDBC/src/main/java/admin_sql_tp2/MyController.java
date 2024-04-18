@@ -57,14 +57,14 @@ public class MyController {
         myResultLabel.setText(result);
     }
 
-    @fxml
+    @FXML
     void voirInformationEtudiant(ActionEvent event)
             throws SQLException {
         String result=myJDBC.executeReadQuery("SELECT * FROM etudiant");
         myResultLabel.setText(result);
     }
 
-    @fxml
+    @FXML
     void voirInformationEnseignant(ActionEvent event)
             throws SQLException {
         String result=myJDBC.executeReadQuery("SELECT * FROM enseignant");
