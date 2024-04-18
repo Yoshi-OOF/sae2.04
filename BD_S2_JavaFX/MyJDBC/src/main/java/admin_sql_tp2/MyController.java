@@ -57,4 +57,18 @@ public class MyController {
         myResultLabel.setText(result);
     }
 
+    @fxml
+    void voirInformationEtudiant(ActionEvent event)
+            throws SQLException {
+        String result=myJDBC.executeReadQuery("SELECT * FROM etudiant");
+        myResultLabel.setText(result);
+    }
+
+    @fxml
+    void voirInformationEnseignant(ActionEvent event)
+            throws SQLException {
+        String result=myJDBC.executeReadQuery("SELECT * FROM enseignant");
+        myResultLabel.setText(result);
+    }
+
 }
