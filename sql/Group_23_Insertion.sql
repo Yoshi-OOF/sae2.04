@@ -36,9 +36,17 @@ INSERT INTO SUPERVISEUR VALUES(6, 'Richard', 'Alexandre', 'Permanent', 'Directeu
 INSERT INTO STAGE VALUES(
     1,'Développement d’une application d’acquisition et de gestion de données ', 'Il s'agit de développer une base de données pour la fabrication des bandes platrées, récupérer
     les informations machine à intégrer dans la base, enregistrer les données et pouvoir les suivre
-    de la fabrication des masses à leur conditionnement', '10/04/2017', '31/08/2017', 500, 
+    de la fabrication des masses à leur conditionnement', '10/04/2017', '31/08/2017', 763, 
     'Ordinateur portable, Accès VPN', 'Visual Studio Code, Docker', 'Windows 10, Serveur distant', 'JavaScript, Python', 'Présentielle', 'Distance', 
-    12, 13, 17, 11, 14, 16, 12, 15, 'Technique', 1, 123456789, 1001
-);
+    12, 13, 17, 11, 14, 16, 12, 15, 'Technique', 1, 123456789, 1);
+
+INSERT INTO STAGE VALUES(
+    2,'Consultant JAVA SPRING HADOOP', 'Intégré(e) au sein d’une équipe projet gérant les applications en lien avec les solution de gestion de campagnes 
+    IBM Marketing Software et Watson Campaign Automation, vous participerez à la réalisation des versions évolutives des systèmes, et serez amené(e) à 
+    intervenir sur les phases de conception technique, réalisation et validation de l’application. Les développements réalisés s’appuieront 
+    principalement sur les technologies suivantes : langages SQL, JavaScript, Java, Spring, paramétrage du progiciel IBM Marketing, HSQL (Hadoop), Oracle ODI (ETL)',
+    '04/05/2020', '31/07/2020', 782, 
+    'Ordinateur portable, Accès VPN', 'Visual Studio Code, Docker', 'Windows 10, Serveur distant', 'JavaScript, Python', 'Présentielle', 'Distance', 
+    12, 13, 17, 11, 14, 16, 12, 15, 'Technique', 2, 987654321, 2);
 
 
