@@ -11,3 +11,17 @@ INSERT INTO enseignant VALUES(3, 'Laforcade', 'Pierre', 'pierre.laforcade@univ-l
 INSERT INTO enseignant VALUES(4, 'Barré', 'Vincent', 'vincent.barre@univ-lemans.fr', FALSE);
 INSERT INTO enseignant VALUES(5, 'Marfisi', 'Iza', 'iza.marfisi@univ-lemans.fr', FALSE);
 INSERT INTO enseignant VALUES(6, 'Hamon', 'Ludovic', 'Hamon.Ludovic@univ-lemans.fr', TRUE);
+
+INSERT INTO ENTREPRISE VALUES(123456789, 'TechNova', '6202A', '62.02A', 'Durand', 'Sophie', '25 rue des Innovateurs', 'sophie.durand@technova.com');
+INSERT INTO ENTREPRISE VALUES(987654321, 'EcoDynamics', '3511Z', '35.11Z', 'Martel', 'Lucas', '48 avenue du Progrès', 'lucas.martel@ecodynamics.com');
+INSERT INTO ENTREPRISE VALUES(112233445, 'BioHealth', '4773Z', '47.73Z', 'Fontaine', 'Émilie', '32 boulevard des Plantes', 'emilie.fontaine@biohealth.com');
+INSERT INTO ENTREPRISE VALUES(556677889, 'FindWay', '6201Z', '62.01Z', 'Roux', 'Damien', '15 rue des Navigateurs', 'damien.roux@findway.com');
+INSERT INTO ENTREPRISE VALUES(998877665, 'SafeHome', '8020Z', '80.20Z', 'Lemoine', 'Julie', '11 impasse de la Sécurité', 'julie.lemoine@safehome.com');
+INSERT INTO ENTREPRISE VALUES(445566778, 'FreshFoodie', '4631Z', '46.31Z', 'Mercier', 'Antoine', '58 rue des Gourmets', 'antoine.mercier@freshfoodie.com');
+
+INSERT INTO MAITRE_STAGE VALUES(1, 'Leroux', 'Marc', 'Permanent', 'Responsable RH', '0757593886', 'marc.leroux@entreprise.com', TRUE, TRUE);
+INSERT INTO MAITRE_STAGE VALUES(2, 'Briand', 'Claire', 'CDD', 'Chef de projet', '0757006811', 'claire.briand@projet.com', FALSE, TRUE);
+INSERT INTO MAITRE_STAGE VALUES(3, 'Dupuis', 'Stéphanie', 'Permanent', 'Directrice technique', '0757572181', 'stephanie.dupuis@tech.com', TRUE, FALSE);
+INSERT INTO MAITRE_STAGE VALUES(4, 'Morin', 'Éric', 'Consultant', 'Analyste financier', '0757607076', 'eric.morin@finance.com', TRUE, TRUE);
+INSERT INTO MAITRE_STAGE VALUES(5, 'Perrin', 'Jeanne', 'Permanent', 'Responsable marketing', '0752881799', 'jeanne.perrin@marketing.com', FALSE, TRUE);
+INSERT INTO MAITRE_STAGE VALUES(6, 'Leclerc', 'Alain', 'CDD', 'Développeur Senior', '0607943841', 'alain.leclerc@developpeur.com', TRUE, FALSE);
