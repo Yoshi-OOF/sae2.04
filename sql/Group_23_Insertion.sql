@@ -58,7 +58,7 @@ INSERT INTO STAGE VALUES(
 INSERT INTO STAGE VALUES(
     4,'Analyste Développeur .Net / Sharepoint', 'Vous intégrerez l'équipe chargée des développements des applications "Collaboratives" utilisées au sein de 
     VINCI Energies. Au cours de votre stage : • Vous interviendrez sur le développement d’applications C# .net sous SharePoint, 
-    • Vous réaliserez la conception et les tests, dans le respect des spécifications établies.', '04/05/2020', '31/07/2020', 782, 
-    'Ordinateur portable', 'Eclipse, MySQL serveur', 'Windows 10, Serveur distant', 'SQL, JavaScript, Python', 'non envoyé', 'rempli', 
-    8, 11, 10, 7, 14, 11, 12, 12, 'Développement', 2, 987654321, 2);
+    • Vous réaliserez la conception et les tests, dans le respect des spécifications établies.', '06/04/2021', '31/07/2021', 658, 
+    'Ordinateur portable', 'Eclipse', 'Windows 11, Serveur distant', 'SQL, JavaScript, Python', 'envoyé', 'non envoyé', 
+    10, 16, 13, 7, 14, 12, 13, 15, 'Développement', 4, 556677889, 4);
 
