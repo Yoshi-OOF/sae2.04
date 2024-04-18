@@ -10,3 +10,4 @@ INSERT INTO enseignant VALUES(2, 'Ernet', 'Bruno', 'bruno.ernet@univ-lemans.fr',
 INSERT INTO enseignant VALUES(3, 'Laforcade', 'Pierre', 'pierre.laforcade@univ-lemans.fr', TRUE);
 INSERT INTO enseignant VALUES(4, 'Barré', 'Vincent', 'vincent.barre@univ-lemans.fr', TRUE);
 INSERT INTO enseignant VALUES(5, 'Marfisi', 'Iza', 'iza.marfisi@univ-lemans.fr', TRUE);
+INSERT INTO enseignant VALUES(6, 'Hamon', 'Ludovic', 'Hamon.Ludovic@univ-lemans.fr', TRUE);
