@@ -1,9 +1,4 @@
-INSERT INTO ETUDIANT VALUES(1, 'Bertrand', 'Emma', '35 rue du Progrès', 'emma.bertrand.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 1);
-INSERT INTO ETUDIANT VALUES(2, 'Bertrand', 'Léo', '32 rue de Innovateurs', 'leo.bertrand.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 2);
-INSERT INTO ETUDIANT VALUES(3, 'Blanc', 'Jade', '48 rue des Navigateurs', 'jade.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 4);
-INSERT INTO ETUDIANT VALUES(4, 'Blanc', 'Lola', '18 rue de Troy', 'lola.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 5);
-INSERT INTO ETUDIANT VALUES(5, 'Blanc', 'Nathan', '47 impasse de la Sécurité', 'nathan.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 3);
-INSERT INTO ETUDIANT VALUES(6, 'Blanc', 'Romane', '12 rue des Gourmets', 'romane.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 6);
+USE Groupe_23;
 
 INSERT INTO ENSEIGNANT VALUES(1, 'Vieillard', 'Nathalie', 'nathalie.vieillard@univ-lemans.fr', FALSE);
 INSERT INTO ENSEIGNANT VALUES(2, 'Ernet', 'Bruno', 'bruno.ernet@univ-lemans.fr', FALSE);
@@ -11,6 +6,13 @@ INSERT INTO ENSEIGNANT VALUES(3, 'Laforcade', 'Pierre', 'pierre.laforcade@univ-l
 INSERT INTO ENSEIGNANT VALUES(4, 'Barré', 'Vincent', 'vincent.barre@univ-lemans.fr', FALSE);
 INSERT INTO ENSEIGNANT VALUES(5, 'Marfisi', 'Iza', 'iza.marfisi@univ-lemans.fr', FALSE);
 INSERT INTO ENSEIGNANT VALUES(6, 'Hamon', 'Ludovic', 'Hamon.Ludovic@univ-lemans.fr', TRUE);
+
+INSERT INTO ETUDIANT VALUES(1, 'Bertrand', 'Emma', '35 rue du Progrès', 'emma.bertrand.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 1);
+INSERT INTO ETUDIANT VALUES(2, 'Bertrand', 'Léo', '32 rue de Innovateurs', 'leo.bertrand.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 2);
+INSERT INTO ETUDIANT VALUES(3, 'Blanc', 'Jade', '48 rue des Navigateurs', 'jade.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 4);
+INSERT INTO ETUDIANT VALUES(4, 'Blanc', 'Lola', '18 rue de Troy', 'lola.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 5);
+INSERT INTO ETUDIANT VALUES(5, 'Blanc', 'Nathan', '47 impasse de la Sécurité', 'nathan.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 3);
+INSERT INTO ETUDIANT VALUES(6, 'Blanc', 'Romane', '12 rue des Gourmets', 'romane.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 6);
 
 INSERT INTO ENTREPRISE VALUES(123456789, 'BSN Medical', '6202A', '62.02A', 'Durand', 'Sophie', '25 rue des Innovateurs', 'sophie.durand@technova.com');
 INSERT INTO ENTREPRISE VALUES(987654321, 'CAPGEMINI TECHNOLOGY SERVICES', '3511Z', '35.11Z', 'Martel', 'Lucas', '48 avenue du Progrès', 'lucas.martel@ecodynamics.com');
@@ -90,4 +92,3 @@ INSERT INTO ENCADRER VALUES(3, 4);
 INSERT INTO ENCADRER VALUES(4, 3);
 INSERT INTO ENCADRER VALUES(5, 2);
 INSERT INTO ENCADRER VALUES(6, 1);
-
