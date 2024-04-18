@@ -1,4 +1,4 @@
-CREATE DATABASE Groupe_23;
+CREATE DATABASE IF NOT EXISTS Groupe_23;
 
 USE Groupe_23;
 
@@ -25,8 +25,8 @@ CREATE TABLE MAITRE_STAGE(
    Poste_maitreStage VARCHAR(50) NOT NULL,
    Tel_maitreStage VARCHAR(15) NOT NULL,
    Mail_maitreStage VARCHAR(40) NOT NULL,
-   Accord_resp_stage BOOLEAN NOT NULL,
-   Accord_etu_stage BOOLEAN NOT NULL,
+   Accord_resp_stage TINYINT NOT NULL,
+   Accord_etu_stage TINYINT NOT NULL,
    PRIMARY KEY(Id_maitreStage),
    UNIQUE(Mail_maitreStage)
 );
@@ -48,7 +48,7 @@ CREATE TABLE ENSEIGNANT(
    Nom_ensei VARCHAR(20) NOT NULL,
    Prenom_ensei VARCHAR(20) NOT NULL,
    Mail_ensei VARCHAR(40) NOT NULL,
-   Resp_stage_ensei BOOLEAN NOT NULL,
+   Resp_stage_ensei TINYINT NOT NULL,
    PRIMARY KEY(Id_ensei),
    UNIQUE(Mail_ensei)
 );
@@ -60,9 +60,9 @@ CREATE TABLE ETUDIANT(
    Adresse_etu VARCHAR(50) NOT NULL,
    Mail_etu VARCHAR(40) NOT NULL,
    Tel_etu VARCHAR(15) NOT NULL,
-   Attes_etu BOOLEAN NOT NULL,
+   Attes_etu TINYINT NOT NULL,
    Chemin_attes_etu VARCHAR(50),
-   Valide_attes_etu BOOLEAN NOT NULL,
+   Valide_attes_etu TINYINT NOT NULL,
    Id_ensei INT NOT NULL,
    PRIMARY KEY(Id_etu),
    UNIQUE(Mail_etu),
@@ -102,9 +102,9 @@ CREATE TABLE STAGE(
 
 CREATE TABLE AVANTAGE(
    Id_avantage INT,
-   Repas_avantage BOOLEAN NOT NULL,
-   Transport_avantage BOOLEAN NOT NULL,
-   Heber_avantage BOOLEAN NOT NULL,
+   Repas_avantage TINYINT NOT NULL,
+   Transport_avantage TINYINT NOT NULL,
+   Heber_avantage TINYINT NOT NULL,
    Autre_avantage VARCHAR(100),
    Id_stage INT NOT NULL,
    PRIMARY KEY(Id_avantage),

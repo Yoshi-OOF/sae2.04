@@ -30,7 +30,7 @@ public class MyController {
     @FXML
     private Label myResultLabel;
 
-    private MyJDBC myJDBC=new MyJDBC("com.microsoft.sqlserver.jdbc.SQLServerDriver","jdbc:sqlserver://172.30.4.243\\LHAMON;databaseName=groupe_23");
+    private MyJDBC myJDBC=new MyJDBC("com.microsoft.sqlserver.jdbc.SQLServerDriver","jdbc:sqlserver://172.30.4.243\\LHAMON;databaseName=andreolieDB");
 
     private boolean connected=false;
 
