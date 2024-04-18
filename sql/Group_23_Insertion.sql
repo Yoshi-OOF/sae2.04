@@ -17,7 +17,7 @@ INSERT INTO ETUDIANT VALUES(6, 'Blanc', 'Romane', '12 rue des Gourmets', 'romane
 INSERT INTO ENTREPRISE VALUES(123456789, 'BSN Medical', '6202A', '62.02A', 'Durand', 'Sophie', '25 rue des Innovateurs', 'sophie.durand@technova.com');
 INSERT INTO ENTREPRISE VALUES(987654321, 'CAPGEMINI TECHNOLOGY SERVICES', '3511Z', '35.11Z', 'Martel', 'Lucas', '48 avenue du Progrès', 'lucas.martel@ecodynamics.com');
 INSERT INTO ENTREPRISE VALUES(112233445, 'SQUARE1 SOFTWARE LTD', '4773Z', '47.73Z', 'Fontaine', 'Émilie', '32 boulevard des Plantes', 'emilie.fontaine@biohealth.com');
-INSERT INTO ENTREPRISE VALUES(556677889, "VINCI Energies Systèmes d'Information", '6201Z', '62.01Z', 'Roux', 'Damien', '15 rue des Navigateurs', 'damien.roux@findway.com');
+INSERT INTO ENTREPRISE VALUES(556677889, 'VINCI Energies Systèmes d''Information', '6201Z', '62.01Z', 'Roux', 'Damien', '15 rue des Navigateurs', 'damien.roux@findway.com');
 INSERT INTO ENTREPRISE VALUES(998877665, 'Capgemini Technology Services', '8020Z', '80.20Z', 'Lemoine', 'Julie', '11 impasse de la Sécurité', 'julie.lemoine@safehome.com');
 INSERT INTO ENTREPRISE VALUES(445566778, 'SHORTWAYS', '4631Z', '46.31Z', 'Mercier', 'Antoine', '58 rue des Gourmets', 'antoine.mercier@freshfoodie.com');
 
@@ -36,17 +36,17 @@ INSERT INTO SUPERVISEUR VALUES(5, 'Robert', 'Marie', 'Permanent', 'Responsable R
 INSERT INTO SUPERVISEUR VALUES(6, 'Richard', 'Alexandre', 'Permanent', 'Directeur Marketing', '0605688590', 'alexandre.richard@marketingcorp.com');
 
 INSERT INTO STAGE VALUES(
-    1,'Développement d’une application d’acquisition et de gestion de données ', "Il s'agit de développer une base de données pour la fabrication des bandes platrées, récupérer
+    1,'Développement d’une application d’acquisition et de gestion de données ', 'Il s''agit de développer une base de données pour la fabrication des bandes platrées, récupérer
     les informations machine à intégrer dans la base, enregistrer les données et pouvoir les suivre
-    de la fabrication des masses à leur conditionnement", '10/04/2017', '31/08/2017', 763, 
+    de la fabrication des masses à leur conditionnement', '10/04/2017', '31/08/2017', 763, 
     'Ordinateur portable, Accès VPN', 'MySQL serveur', 'Windows 10, Serveur distant', 'SQL', 'envoyé', 'rempli', 
     12, 13, 17, 11, 14, 16, 12, 15, 'Base de données', 1, 123456789, 1);
 
 INSERT INTO STAGE VALUES(
-    2,'Consultant JAVA SPRING HADOOP', "Intégré(e) au sein d’une équipe projet gérant les applications en lien avec les solution de gestion de campagnes 
+    2,'Consultant JAVA SPRING HADOOP', 'Intégré(e) au sein d’une équipe projet gérant les applications en lien avec les solution de gestion de campagnes 
     IBM Marketing Software et Watson Campaign Automation, vous participerez à la réalisation des versions évolutives des systèmes, et serez amené(e) à 
     intervenir sur les phases de conception technique, réalisation et validation de l’application. Les développements réalisés s’appuieront 
-    principalement sur les technologies suivantes : langages SQL, JavaScript, Java, Spring, paramétrage du progiciel IBM Marketing, HSQL (Hadoop), Oracle ODI (ETL)",
+    principalement sur les technologies suivantes : langages SQL, JavaScript, Java, Spring, paramétrage du progiciel IBM Marketing, HSQL (Hadoop), Oracle ODI (ETL)',
     '04/05/2020', '31/07/2020', 782, 
     'Ordinateur portable', 'Eclipse, MySQL serveur', 'Windows 10, Serveur distant', 'SQL, JavaScript, Python', 'non envoyé', 'rempli', 
     8, 11, 10, 7, 14, 11, 12, 12, 'Développement', 2, 987654321, 2);
@@ -58,9 +58,9 @@ INSERT INTO STAGE VALUES(
     18, 15, 16, 18, 14, 16, 17, 19, 'Mobile', 3, 112233445, 3);
 
 INSERT INTO STAGE VALUES(
-    4,'Analyste Développeur .Net / Sharepoint', "Vous intégrerez l'équipe chargée des développements des applications 'Collaboratives' utilisées au sein de 
+    4,'Analyste Développeur .Net / Sharepoint', 'Vous intégrerez l''équipe chargée des développements des applications ''Collaboratives'' utilisées au sein de 
     VINCI Energies. Au cours de votre stage : • Vous interviendrez sur le développement d’applications C# .net sous SharePoint, 
-    • Vous réaliserez la conception et les tests, dans le respect des spécifications établies.", '06/04/2021', '31/07/2021', 658, 
+    • Vous réaliserez la conception et les tests, dans le respect des spécifications établies.', '06/04/2021', '31/07/2021', 658, 
     'Ordinateur portable', 'Eclipse', 'Windows 11, Serveur distant', 'SQL, JavaScript, Python', 'envoyé', 'non envoyé', 
     10, 16, 13, 7, 14, 12, 13, 15, 'Développement', 4, 556677889, 4);
 
@@ -72,14 +72,14 @@ INSERT INTO STAGE VALUES(
     'rempli', 'envoyé', 17, 15, 13, 18, 14, 17, 16, 18, 'Développement', 5, 998877665, 5);
 
 INSERT INTO STAGE VALUES(
-    6,'Conception, développement et évolution des produits Shortways', "Le but de cette mission est d'intégrer le stagiaire à notre équipe de 
-    Recherche et Développement. La mission comprendra des phases d'analyse (définition du besoin), de développement, de tests et d'intégration. 
-    Le stagiaire sera amené à travailler sur les différentes parties de notre solution logicielle ainsi que ses différents langages : 'front' (Javascript), 
-    serveur (Scala), base de données (MySQL, Redis), infrastructure (Docker, Kubernetes).", 
+    6,'Conception, développement et évolution des produits Shortways', 'Le but de cette mission est d''intégrer le stagiaire à notre équipe de 
+    Recherche et Développement. La mission comprendra des phases d''analyse (définition du besoin), de développement, de tests et d''intégration. 
+    Le stagiaire sera amené à travailler sur les différentes parties de notre solution logicielle ainsi que ses différents langages : ''front'' (Javascript), 
+    serveur (Scala), base de données (MySQL, Redis), infrastructure (Docker, Kubernetes).', 
     '11/05/2020', '24/07/2020', 596, 'Ordinateur portable', 'Visual Studio Code, Docker', 'Windows 11, Serveur distant', 'JavaScript, Python', 
     'rempli', 'envoyé', 17, 15, 13, 18, 14, 17, 16, 18, 'Développement', 6, 445566778, 6);
 
-INSERT INTO AVANTAGE VALUES(1, 1, 1, 0, "Bon 'achat", 1);
+INSERT INTO AVANTAGE VALUES(1, 1, 1, 0, 'Bon ''achat', 1);
 INSERT INTO AVANTAGE VALUES(2, 0, 1, 1, 'Abonnement gym', 2);
 INSERT INTO AVANTAGE VALUES(3, 1, 0, 1, 'Carte de transport', 3);
 INSERT INTO AVANTAGE VALUES(4, 1, 1, 1, NULL, 4);
