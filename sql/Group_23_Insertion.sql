@@ -25,3 +25,18 @@ INSERT INTO MAITRE_STAGE VALUES(3, 'Dupuis', 'Stéphanie', 'Permanent', 'Directr
 INSERT INTO MAITRE_STAGE VALUES(4, 'Morin', 'Éric', 'Consultant', 'Analyste financier', '0757607076', 'eric.morin@finance.com', TRUE, TRUE);
 INSERT INTO MAITRE_STAGE VALUES(5, 'Perrin', 'Jeanne', 'Permanent', 'Responsable marketing', '0752881799', 'jeanne.perrin@marketing.com', FALSE, TRUE);
 INSERT INTO MAITRE_STAGE VALUES(6, 'Leclerc', 'Alain', 'CDD', 'Développeur Senior', '0607943841', 'alain.leclerc@developpeur.com', TRUE, FALSE);
+
+INSERT INTO SUPERVISEUR VALUES(1, 'Martin', 'Lucie', 'Permanent', 'Manager', '0754609094', 'lucie.martin@corp.com');
+INSERT INTO SUPERVISEUR VALUES(2, 'Bernard', 'Thierry', 'Contractuel', 'Chef de projet', '0644720191', 'thierry.bernard@projects.com');
+INSERT INTO SUPERVISEUR VALUES(3, 'Thomas', 'Elodie', 'Permanent', 'Directrice des Opérations', '0600596857', 'elodie.thomas@operations.com');
+INSERT INTO SUPERVISEUR VALUES(4, 'Petit', 'Bruno', 'Contractuel', 'Consultant IT', '0641660182', 'bruno.petit@itconsult.com');
+INSERT INTO SUPERVISEUR VALUES(5, 'Robert', 'Marie', 'Permanent', 'Responsable R&D', '0757069146', 'marie.robert@innovation.com');
+INSERT INTO SUPERVISEUR VALUES(6, 'Richard', 'Alexandre', 'Permanent', 'Directeur Marketing', '0605688590', 'alexandre.richard@marketingcorp.com');
+
+INSERT INTO STAGE VALUES(
+    1,'Développeur Web', 'Conception et développement de nouvelles fonctionnalités pour notre plateforme en ligne.', '2023-01-10', '2023-06-10', 500, 
+    'Ordinateur portable, Accès VPN', 'Visual Studio Code, Docker', 'Windows 10, Serveur distant', 'JavaScript, Python', 'Présentielle', 'Distance', 
+    12, 13, 17, 11, 14, 16, 12, 15, 'Technique', 1, 123456789, 1001
+);
+
+
