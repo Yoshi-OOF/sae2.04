@@ -1,18 +1,18 @@
 USE Groupe_23;
 
-INSERT INTO ENSEIGNANT VALUES(1, 'Vieillard', 'Nathalie', 'nathalie.vieillard@univ-lemans.fr', FALSE);
-INSERT INTO ENSEIGNANT VALUES(2, 'Ernet', 'Bruno', 'bruno.ernet@univ-lemans.fr', FALSE);
-INSERT INTO ENSEIGNANT VALUES(3, 'Laforcade', 'Pierre', 'pierre.laforcade@univ-lemans.fr', FALSE);
-INSERT INTO ENSEIGNANT VALUES(4, 'Barré', 'Vincent', 'vincent.barre@univ-lemans.fr', FALSE);
-INSERT INTO ENSEIGNANT VALUES(5, 'Marfisi', 'Iza', 'iza.marfisi@univ-lemans.fr', FALSE);
-INSERT INTO ENSEIGNANT VALUES(6, 'Hamon', 'Ludovic', 'Hamon.Ludovic@univ-lemans.fr', TRUE);
+INSERT INTO ENSEIGNANT VALUES(1, 'Vieillard', 'Nathalie', 'nathalie.vieillard@univ-lemans.fr', 0);
+INSERT INTO ENSEIGNANT VALUES(2, 'Ernet', 'Bruno', 'bruno.ernet@univ-lemans.fr', 0);
+INSERT INTO ENSEIGNANT VALUES(3, 'Laforcade', 'Pierre', 'pierre.laforcade@univ-lemans.fr', 0);
+INSERT INTO ENSEIGNANT VALUES(4, 'Barré', 'Vincent', 'vincent.barre@univ-lemans.fr', 0);
+INSERT INTO ENSEIGNANT VALUES(5, 'Marfisi', 'Iza', 'iza.marfisi@univ-lemans.fr', 0);
+INSERT INTO ENSEIGNANT VALUES(6, 'Hamon', 'Ludovic', 'Hamon.Ludovic@univ-lemans.fr', 1);
 
-INSERT INTO ETUDIANT VALUES(1, 'Bertrand', 'Emma', '35 rue du Progrès', 'emma.bertrand.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 1);
-INSERT INTO ETUDIANT VALUES(2, 'Bertrand', 'Léo', '32 rue de Innovateurs', 'leo.bertrand.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 2);
-INSERT INTO ETUDIANT VALUES(3, 'Blanc', 'Jade', '48 rue des Navigateurs', 'jade.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 4);
-INSERT INTO ETUDIANT VALUES(4, 'Blanc', 'Lola', '18 rue de Troy', 'lola.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 5);
-INSERT INTO ETUDIANT VALUES(5, 'Blanc', 'Nathan', '47 impasse de la Sécurité', 'nathan.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 3);
-INSERT INTO ETUDIANT VALUES(6, 'Blanc', 'Romane', '12 rue des Gourmets', 'romane.blanc.etu@univ-lemans.fr', '0783373684', TRUE, 'tongrog/lol', TRUE, 6);
+INSERT INTO ETUDIANT VALUES(1, 'Bertrand', 'Emma', '35 rue du Progrès', 'emma.bertrand.etu@univ-lemans.fr', '0783373684', 1, 'tongrog/lol', 1, 1);
+INSERT INTO ETUDIANT VALUES(2, 'Bertrand', 'Léo', '32 rue de Innovateurs', 'leo.bertrand.etu@univ-lemans.fr', '0783373684', 1, 'tongrog/lol', 1, 2);
+INSERT INTO ETUDIANT VALUES(3, 'Blanc', 'Jade', '48 rue des Navigateurs', 'jade.blanc.etu@univ-lemans.fr', '0783373684', 1, 'tongrog/lol', 1, 4);
+INSERT INTO ETUDIANT VALUES(4, 'Blanc', 'Lola', '18 rue de Troy', 'lola.blanc.etu@univ-lemans.fr', '0783373684', 1, 'tongrog/lol', 1, 5);
+INSERT INTO ETUDIANT VALUES(5, 'Blanc', 'Nathan', '47 impasse de la Sécurité', 'nathan.blanc.etu@univ-lemans.fr', '0783373684', 1, 'tongrog/lol', 1, 3);
+INSERT INTO ETUDIANT VALUES(6, 'Blanc', 'Romane', '12 rue des Gourmets', 'romane.blanc.etu@univ-lemans.fr', '0783373684', 1, 'tongrog/lol', 1, 6);
 
 INSERT INTO ENTREPRISE VALUES(123456789, 'BSN Medical', '6202A', '62.02A', 'Durand', 'Sophie', '25 rue des Innovateurs', 'sophie.durand@technova.com');
 INSERT INTO ENTREPRISE VALUES(987654321, 'CAPGEMINI TECHNOLOGY SERVICES', '3511Z', '35.11Z', 'Martel', 'Lucas', '48 avenue du Progrès', 'lucas.martel@ecodynamics.com');
@@ -21,12 +21,12 @@ INSERT INTO ENTREPRISE VALUES(556677889, "VINCI Energies Systèmes d'Information
 INSERT INTO ENTREPRISE VALUES(998877665, 'Capgemini Technology Services', '8020Z', '80.20Z', 'Lemoine', 'Julie', '11 impasse de la Sécurité', 'julie.lemoine@safehome.com');
 INSERT INTO ENTREPRISE VALUES(445566778, 'SHORTWAYS', '4631Z', '46.31Z', 'Mercier', 'Antoine', '58 rue des Gourmets', 'antoine.mercier@freshfoodie.com');
 
-INSERT INTO MAITRE_STAGE VALUES(1, 'Thierry', 'COUANON', 'Permanent', 'Responsable RH', '0757593886', 'thierry.couanon@bsnmedical.com', TRUE, TRUE);
-INSERT INTO MAITRE_STAGE VALUES(2, 'François', 'LE DILHUIT', 'CDD', 'Chef de projet', '0757006811', 'francois.ledilhuit@capgemini.com', FALSE, TRUE);
-INSERT INTO MAITRE_STAGE VALUES(3, 'Roberto', 'PRATO', 'Permanent', 'Directrice technique', '0757572181', 'roberto@square1.io', TRUE, FALSE);
-INSERT INTO MAITRE_STAGE VALUES(4, 'Alice', 'LENOBLE', 'Consultant', 'Analyste financier', '0757607076', 'alice.lenoble@vinci-energies.com', TRUE, TRUE);
-INSERT INTO MAITRE_STAGE VALUES(5, 'Clément', 'CONNAN', 'Permanent', 'Responsable marketing', '0752881799', 'clement.connan@capgemini.com', FALSE, TRUE);
-INSERT INTO MAITRE_STAGE VALUES(6, 'Pierre', 'TIJOU', 'CDD', 'Développeur Senior', '0607943841', 'pierre.tijou@shortways.com', TRUE, FALSE);
+INSERT INTO MAITRE_STAGE VALUES(1, 'Thierry', 'COUANON', 'Permanent', 'Responsable RH', '0757593886', 'thierry.couanon@bsnmedical.com', 1, 1);
+INSERT INTO MAITRE_STAGE VALUES(2, 'François', 'LE DILHUIT', 'CDD', 'Chef de projet', '0757006811', 'francois.ledilhuit@capgemini.com', 0, 1);
+INSERT INTO MAITRE_STAGE VALUES(3, 'Roberto', 'PRATO', 'Permanent', 'Directrice technique', '0757572181', 'roberto@square1.io', 1, 0);
+INSERT INTO MAITRE_STAGE VALUES(4, 'Alice', 'LENOBLE', 'Consultant', 'Analyste financier', '0757607076', 'alice.lenoble@vinci-energies.com', 1, 1);
+INSERT INTO MAITRE_STAGE VALUES(5, 'Clément', 'CONNAN', 'Permanent', 'Responsable marketing', '0752881799', 'clement.connan@capgemini.com', 0, 1);
+INSERT INTO MAITRE_STAGE VALUES(6, 'Pierre', 'TIJOU', 'CDD', 'Développeur Senior', '0607943841', 'pierre.tijou@shortways.com', 1, 0);
 
 INSERT INTO SUPERVISEUR VALUES(1, 'Martin', 'Lucie', 'Permanent', 'Manager', '0754609094', 'lucie.martin@corp.com');
 INSERT INTO SUPERVISEUR VALUES(2, 'Bernard', 'Thierry', 'Contractuel', 'Chef de projet', '0644720191', 'thierry.bernard@projects.com');
@@ -79,12 +79,12 @@ INSERT INTO STAGE VALUES(
     '11/05/2020', '24/07/2020', 596, 'Ordinateur portable', 'Visual Studio Code, Docker', 'Windows 11, Serveur distant', 'JavaScript, Python', 
     'rempli', 'envoyé', 17, 15, 13, 18, 14, 17, 16, 18, 'Développement', 6, 445566778, 6);
 
-INSERT INTO AVANTAGE VALUES(1, TRUE, TRUE, FALSE, "Bon 'achat", 1);
-INSERT INTO AVANTAGE VALUES(2, FALSE, TRUE, TRUE, 'Abonnement gym', 2);
-INSERT INTO AVANTAGE VALUES(3, TRUE, FALSE, TRUE, 'Carte de transport', 3);
-INSERT INTO AVANTAGE VALUES(4, TRUE, TRUE, TRUE, NULL, 4);
-INSERT INTO AVANTAGE VALUES(5, FALSE, FALSE, FALSE, 'Accès à des formations en ligne', 5);
-INSERT INTO AVANTAGE VALUES(6, TRUE, TRUE, FALSE, 'Participation à des conférences', 6);
+INSERT INTO AVANTAGE VALUES(1, 1, 1, 0, "Bon 'achat", 1);
+INSERT INTO AVANTAGE VALUES(2, 0, 1, 1, 'Abonnement gym', 2);
+INSERT INTO AVANTAGE VALUES(3, 1, 0, 1, 'Carte de transport', 3);
+INSERT INTO AVANTAGE VALUES(4, 1, 1, 1, NULL, 4);
+INSERT INTO AVANTAGE VALUES(5, 0, 0, 0, 'Accès à des formations en ligne', 5);
+INSERT INTO AVANTAGE VALUES(6, 1, 1, 0, 'Participation à des conférences', 6);
 
 INSERT INTO ENCADRER VALUES(1, 6);
 INSERT INTO ENCADRER VALUES(2, 5);
