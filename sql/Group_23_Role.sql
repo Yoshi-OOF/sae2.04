@@ -21,7 +21,7 @@ FROM ETUDIANT;
 
 CREATE VIEW vue_secretaire_stage AS
 SELECT Titre_mission ,Des_mission ,Date_deb_stage ,Date_fin_stage ,Grati_stage ,Materiel_stage ,Logiciel_stage, Envi_stage ,Langage_stage ,
-Type_mission ,Id_maitreStage ,Siret_ent ,Id_etu, Fond_rapport_note ,Forme_rapport_note ,Fond_soutenance_note ,Forme_soutenance_note ,Jury_soutenance_note ,
+Type_mission , Fond_rapport_note ,Forme_rapport_note ,Fond_soutenance_note ,Forme_soutenance_note ,Jury_soutenance_note ,
 Methode_ent_note ,Travail_ent_note, Compor_ent_note,Form_ent_stage, Form_etu_stage
 FROM STAGE;
 

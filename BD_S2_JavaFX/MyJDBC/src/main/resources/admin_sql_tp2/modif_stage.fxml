@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="234.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin_sql_tp2.ModifStageController">
+   <children>
+      <TextField fx:id="etuEmailTextField" layoutX="73.0" layoutY="58.0" prefHeight="25.0" prefWidth="230.0" promptText="Email de l'étudiant" />
+      <TextField fx:id="etuChampTextField" layoutX="73.0" layoutY="96.0" prefHeight="25.0" prefWidth="230.0" promptText="Champ à modifier" />
+      <TextField fx:id="etuNouvelleValeurTextField" layoutX="73.0" layoutY="131.0" prefHeight="25.0" prefWidth="230.0" promptText="Nouvelle valeur" />
+      <Text layoutX="107.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifer un étudiant">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="110.0" layoutY="166.0" mnemonicParsing="false" onAction="#executeModifierEtu" prefHeight="33.0" prefWidth="155.0" text="Modifier l'étudiant" />
+      <Label fx:id="resultLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="212.0" prefHeight="17.0" prefWidth="353.0" text="Résultat d'exécution" textAlignment="CENTER" />
+   </children>
 </AnchorPane>
