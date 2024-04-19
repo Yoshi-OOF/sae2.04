@@ -1,14 +1,14 @@
 USE Groupe_23;
 CREATE ROLE Secretaire;
 
-GRANT SELECT, UPDATE ON ENTREPRISE(Nom_ent, Naf_ent, Ape_ent VARCHAR, Nom_chef_ent, Prenom_chef_ent, Adresse_chef_ent, Mail_chef_ent TO Secretaire;
+GRANT SELECT, UPDATE ON ENTREPRISE(Nom_ent, Naf_ent, Ape_ent VARCHAR, Nom_chef_ent, Prenom_chef_ent, Adresse_chef_ent, Mail_chef_ent) TO Secretaire;
 GRANT SELECT, UPDATE ON MAITRE_STAGE(Nom_maitreStage, Prenom_maitreStage, Statut_maitreStage, Poste_maitreStage, Tel_maitreStage, Mail_maitreStage) TO Secretaire;
 GRANT SELECT, UPDATE ON SUPERVISEUR(Nom_superviseur, Prenom_superviseur, Statut_superviseur, Poste_superviseur, Tel_superviseur, Mail_superviseur) TO Secretaire;
 GRANT SELECT, UPDATE ON ENSEIGNANT(Nom_ensei, Prenom_ensei, Mail_ensei, Resp_stage_ensei) TO Secretaire;
-GRANT SELECT, UPDATE ON ETUDIANT(Nom_etu, Prenom_etu, Adresse_etu, Mail_etu, Tel_etu, Attes_etu, Chemin_attes_etu, Valide_attes_etu, Id_ensei) TO Secretaire;
+GRANT SELECT, UPDATE ON ETUDIANT(Nom_etu, Prenom_etu, Adresse_etu, Mail_etu, Tel_etu, Attes_etu, Chemin_attes_etu, Valide_attes_etu) TO Secretaire;
 GRANT SELECT, UPDATE ON STAGE(Titre_mission ,Des_mission ,Date_deb_stage ,Date_fin_stage ,Grati_stage ,Materiel_stage ,Logiciel_stage,
-Envi_stage ,Langage_stage ,Type_mission ,Id_maitreStage ,Siret_ent ,Id_etu) TO Secretaire;
-GRANT SELECT, UPDATE ON AVANTAGE(Repas_avantage, Transport_avantage, Heber_avantage, Autre_avantage, Id_stage) TO Secretaire;
+Envi_stage ,Langage_stage ,Type_mission) TO Secretaire;
+GRANT SELECT, UPDATE ON AVANTAGE(Repas_avantage, Transport_avantage, Heber_avantage, Autre_avantage) TO Secretaire;
 
 GRANT SELECT ON STAGE(Fond_rapport_note ,Forme_rapport_note ,Fond_soutenance_note ,Forme_soutenance_note ,Jury_soutenance_note ,Methode_ent_note ,Travail_ent_note,
 Compor_ent_note,Form_ent_stage, Form_etu_stage) TO Secretaire;
