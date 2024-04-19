@@ -49,12 +49,21 @@ public class MyApplication extends Application {
         FXMLLoader fxmlModifMaitreStagePanelLoader = new FXMLLoader(MyApplication.class.getResource("modif_maitrestage.fxml"));
         Scene sceneModifMaitreStagePanel = new Scene(fxmlModifMaitreStagePanelLoader.load());
         modifMaitreStagePanel.setScene(sceneModifMaitreStagePanel);
+
+        Stage modifStagePanel = new Stage(StageStyle.DECORATED);
+        modifStagePanel.initModality(Modality.NONE);
+        modifStagePanel.initOwner(stage);
+
+        FXMLLoader fxmlModifStagePanelLoader = new FXMLLoader(MyApplication.class.getResource("modif_stage.fxml"));
+        Scene sceneModifStagePanel = new Scene(fxmlModifStagePanelLoader.load());
+        modifStagePanel.setScene(sceneModifStagePanel);
         
         MyController controller = (MyController)fxmlLoader.getController();
         controller.setModifEtuPanel(modifEtuPanel);
         controller.setModifEnseiPanel(modifEnseiPanel);
         controller.setModifEntPanel(modifEntPanel);
         controller.setModifMaitreStagePanel(modifMaitreStagePanel);
+        controller.setModifStagePanel(modifStagePanel);
 
 
     }

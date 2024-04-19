@@ -23,6 +23,9 @@ public class MyController {
     @FXML
     private Stage modifMaitreStagePanel;
 
+    @FXML 
+    private Button modifStagePanel;
+
     @FXML
     private Button myConnexionButton;
 
@@ -62,6 +65,10 @@ public class MyController {
 
     public void setModifMaitreStagePanel(Stage modifmaitrestagepanel) {
         this.modifMaitreStagePanel = modifmaitrestagepanel;
+    }
+
+    public void setModifStagePanel(Stage modifstagepanel) {
+        this.modifStagePanel = modifstagepanel;
     }
 
     @FXML
@@ -154,6 +161,11 @@ public class MyController {
     @FXML
     void voirPanelModifMaitreStage(ActionEvent event) {
         this.modifMaitreStagePanel.show();
+    }
+
+    @FXML
+    void voirPanelModifStage(ActionEvent event) {
+        this.modifStagePanel.show();
     }
 
 }
