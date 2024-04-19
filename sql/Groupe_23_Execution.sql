@@ -47,4 +47,6 @@ SELECT S.Id_stage, S.Titre_mission, S.Fond_rapport_note, S.Forme_rapport_note, S
 S.Methode_ent_note, S.Travail_ent_note, S.Compor_ent_note FROM STAGE S
 JOIN ETUDIANT E ON S.Id_etu = E.Id_etu WHERE E.Mail_etu = 'leo.bertrand.etu@univ-lemans.fr';
 
+SELECT Nom_ent, Naf_ent, Ape_ent, Nom_chef_ent, Prenom_chef_ent, Adresse_chef_ent, Mail_chef_ent FROM ENTREPRISE;
+
 
