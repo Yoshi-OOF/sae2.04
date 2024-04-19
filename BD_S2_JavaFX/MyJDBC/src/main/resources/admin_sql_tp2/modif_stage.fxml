@@ -7,17 +7,19 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="234.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin_sql_tp2.ModifStageController">
+<AnchorPane prefHeight="301.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin_sql_tp2.ModifStageController">
    <children>
-      <TextField fx:id="etuEmailTextField" layoutX="73.0" layoutY="58.0" prefHeight="25.0" prefWidth="230.0" promptText="Email de l'étudiant" />
-      <TextField fx:id="etuChampTextField" layoutX="73.0" layoutY="96.0" prefHeight="25.0" prefWidth="230.0" promptText="Champ à modifier" />
-      <TextField fx:id="etuNouvelleValeurTextField" layoutX="73.0" layoutY="131.0" prefHeight="25.0" prefWidth="230.0" promptText="Nouvelle valeur" />
-      <Text layoutX="107.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifer un étudiant">
+      <TextField fx:id="stageTypeTextField" layoutX="73.0" layoutY="58.0" prefHeight="25.0" prefWidth="230.0" promptText="Type du stage" />
+      <TextField fx:id="stageChampTextField" layoutX="73.0" layoutY="160.0" prefHeight="25.0" prefWidth="230.0" promptText="Champ à modifier" />
+      <TextField fx:id="stageNouvelleValeurTextField" layoutX="74.0" layoutY="193.0" prefHeight="25.0" prefWidth="230.0" promptText="Nouvelle valeur" />
+      <Text layoutX="119.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifer un stage">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Text>
-      <Button layoutX="110.0" layoutY="166.0" mnemonicParsing="false" onAction="#executeModifierEtu" prefHeight="33.0" prefWidth="155.0" text="Modifier l'étudiant" />
-      <Label fx:id="resultLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="212.0" prefHeight="17.0" prefWidth="353.0" text="Résultat d'exécution" textAlignment="CENTER" />
+      <Button layoutX="110.0" layoutY="230.0" mnemonicParsing="false" onAction="#executeModifierStage" prefHeight="33.0" prefWidth="155.0" text="Modifier le stage" />
+      <Label fx:id="resultLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="276.0" prefHeight="17.0" prefWidth="353.0" text="Résultat d'exécution" textAlignment="CENTER" />
+      <TextField fx:id="stageDateDebutTextField" layoutX="73.0" layoutY="93.0" prefHeight="25.0" prefWidth="230.0" promptText="Date de début du stage" />
+      <TextField fx:id="stageDateFinTextField" layoutX="73.0" layoutY="126.0" prefHeight="25.0" prefWidth="230.0" promptText="Date de fin du stage" />
    </children>
 </AnchorPane>
