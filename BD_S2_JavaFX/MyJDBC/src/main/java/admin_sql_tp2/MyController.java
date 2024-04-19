@@ -24,7 +24,7 @@ public class MyController {
     private Stage modifMaitreStagePanel;
 
     @FXML 
-    private Button modifStagePanel;
+    private Stage modifStagePanel;
 
     @FXML
     private Button myConnexionButton;
