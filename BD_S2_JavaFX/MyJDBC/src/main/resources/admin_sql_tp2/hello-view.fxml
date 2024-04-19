@@ -24,14 +24,12 @@
       <Button fx:id="voirMaitreStage" layoutX="534.0" layoutY="111.0" mnemonicParsing="false" onAction="#voirInformationMaitreStage" prefHeight="25.0" prefWidth="162.0" text="Voir les maître de stage" />
       <Button fx:id="voirSuperviseur" layoutX="707.0" layoutY="111.0" mnemonicParsing="false" onAction="#voirInformationSuperviseur" prefHeight="25.0" prefWidth="162.0" text="Voir les superviseurs" />
       <Button fx:id="voirStage" layoutX="615.0" layoutY="148.0" mnemonicParsing="false" onAction="#voirInformationStage" prefHeight="25.0" prefWidth="162.0" text="Voir les stages" />
-      <Label fx:id="myConnexionLabel11" layoutX="628.0" layoutY="186.0" text="Modifier un étudiant">
+      <Label fx:id="myConnexionLabel11" layoutX="628.0" layoutY="186.0" text="Panel de modification">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="etuEmailTextField" layoutX="567.0" layoutY="212.0" prefHeight="25.0" prefWidth="264.0" promptText="Email de l'étudiant" />
-      <TextField fx:id="etuChampTextField" layoutX="567.0" layoutY="245.0" prefHeight="25.0" prefWidth="264.0" promptText="Champ a modifier" />
-      <TextField fx:id="etuNouvelleValeurTextField" layoutX="567.0" layoutY="277.0" prefHeight="25.0" prefWidth="264.0" promptText="Nouvelle valeur" />
-      <Button fx:id="executeModifierEtuButton" layoutX="666.0" layoutY="309.0" mnemonicParsing="false" onAction="#executeModifierEtu" text="Modifier" />
+      <Button fx:id="voirStage1" layoutX="534.0" layoutY="216.0" mnemonicParsing="false" onAction="#voirInformationStage" prefHeight="25.0" prefWidth="162.0" text="Modifier un étudiant" />
+      <Button fx:id="voirStage11" layoutX="707.0" layoutY="216.0" mnemonicParsing="false" onAction="#voirInformationStage" prefHeight="25.0" prefWidth="162.0" text="Modifier un étudiant" />
    </children>
 </Pane>
