@@ -34,9 +34,20 @@ public class MyApplication extends Application {
         Scene sceneModifEnseiPanel = new Scene(fxmlModifEnseiPanelLoader.load());
         modifEnseiPanel.setScene(sceneModifEnseiPanel);
 
+        Stage modifEntPanel = new Stage(StageStyle.DECORATED);
+        modifEntPanel.initModality(Modality.NONE);
+        modifEntPanel.initOwner(stage);
+
+        FXMLLoader fxmlModifEntPanelLoader = new FXMLLoader(MyApplication.class.getResource("modif_ent.fxml"));
+        Scene sceneModifEntPanel = new Scene(fxmlModifEntPanelLoader.load());
+        modifEntPanel.setScene(sceneModifEntPanel);
+        
         MyController controller = (MyController)fxmlLoader.getController();
         controller.setModifEtuPanel(modifEtuPanel);
         controller.setModifEnseiPanel(modifEnseiPanel);
+        controller.setModifEntPanel(modifEntPanel);
+
+
     }
 
     public static void main(String[] args) {

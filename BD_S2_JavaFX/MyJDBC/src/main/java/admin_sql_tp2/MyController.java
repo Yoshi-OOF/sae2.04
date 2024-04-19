@@ -18,6 +18,9 @@ public class MyController {
     private Stage modifEnseiPanel;
 
     @FXML
+    private Stage modifEntPanel;
+
+    @FXML
     private Button myConnexionButton;
 
     @FXML
@@ -38,8 +41,6 @@ public class MyController {
     @FXML
     private Label myResultLabel;
 
-
-
     static public MyJDBC myJDBC=new MyJDBC("com.microsoft.sqlserver.jdbc.SQLServerDriver","jdbc:sqlserver://172.30.4.243\\LHAMON;databaseName=andreolieDB");
 
     private boolean connected=false;
@@ -50,6 +51,10 @@ public class MyController {
 
     public void setModifEnseiPanel(Stage modifenseipanel) {
         this.modifEnseiPanel = modifenseipanel;
+    }
+
+    public void setModifEntPanel(Stage modifentpanel) {
+        this.modifEntPanel = modifentpanel;
     }
 
     @FXML
@@ -125,6 +130,11 @@ public class MyController {
     @FXML
     void voirPanelModifEnsei(ActionEvent event) {
         this.modifEnseiPanel.show();
+    }
+
+    @FXML
+    void voirPanelModifEnt(ActionEvent event) {
+        this.modifEntPanel.show();
     }
 
 }

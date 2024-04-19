@@ -32,5 +32,6 @@
       <Button fx:id="modifEtuPanelButton" layoutX="707.0" layoutY="216.0" mnemonicParsing="false" onAction="#voirPanelModifEtu" prefHeight="25.0" prefWidth="162.0" text="Modifier un étudiant" />
       <Button fx:id="modifEnseianelButton" layoutX="534.0" layoutY="216.0" mnemonicParsing="false" onAction="#voirPanelModifEnsei" prefHeight="25.0" prefWidth="162.0" text="Modifier un enseignant" />
       <Button fx:id="voirStage1" layoutX="707.0" layoutY="148.0" mnemonicParsing="false" onAction="#voirInformationNote" prefHeight="25.0" prefWidth="162.0" text="Voir les notes" />
+      <Button fx:id="modifEntPanelButton" layoutX="534.0" layoutY="251.0" mnemonicParsing="false" onAction="#voirPanelModifEnt" prefHeight="25.0" prefWidth="162.0" text="Modifier une entreprise" />
    </children>
 </Pane>
