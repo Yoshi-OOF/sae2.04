@@ -4,8 +4,9 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin_sql_tp2.MyController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin_sql_tp2.MyController">
    <children>
       <Button fx:id="myConnexionButton" layoutX="338.0" layoutY="66.0" mnemonicParsing="false" onAction="#connexionPressEvent" text="Connexion" />
       <Button fx:id="myQueryButton" layoutX="341.0" layoutY="123.0" mnemonicParsing="false" onAction="#executionPressEvent" text="Execution" />
@@ -14,9 +15,20 @@
       <TextField fx:id="myIdentityTextField" layoutX="69.0" layoutY="66.0" promptText="Identité" />
       <TextField fx:id="myPasswordTextField" layoutX="226.0" layoutY="66.0" prefHeight="25.0" prefWidth="104.0" promptText="Mot de passe" />
       <TextField fx:id="myQueryTextField" layoutX="67.0" layoutY="123.0" prefHeight="25.0" prefWidth="264.0" promptText="Requête SELECT" />
-      <Button fx:id="infoEtu" layoutX="667.0" layoutY="79.0" mnemonicParsing="false" onAction="#voirInformationEtudiant" text="Voir les étudiants" />
-      <Button fx:id="infoEnsei" layoutX="534.0" layoutY="79.0" mnemonicParsing="false" onAction="#voirInformationEnseignant" text="Voir les enseignants" />
-      <Label fx:id="myConnexionLabel1" layoutX="638.0" layoutY="49.0" text="Secretaires" />
-      <Button fx:id="voirMaitreStage" layoutX="534.0" layoutY="111.0" mnemonicParsing="false" onAction="#voirInformationMaitreStage" text="Voir les maître de stage" />
+      <Button fx:id="infoEtu" layoutX="707.0" layoutY="79.0" mnemonicParsing="false" onAction="#voirInformationEtudiant" prefHeight="25.0" prefWidth="162.0" text="Voir les étudiants" />
+      <Button fx:id="infoEnsei" layoutX="534.0" layoutY="79.0" mnemonicParsing="false" onAction="#voirInformationEnseignant" prefHeight="25.0" prefWidth="162.0" text="Voir les enseignants" />
+      <Label fx:id="myConnexionLabel1" layoutX="659.0" layoutY="40.0" text="Secretaire">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <Button fx:id="voirMaitreStage" layoutX="534.0" layoutY="111.0" mnemonicParsing="false" onAction="#voirInformationMaitreStage" prefHeight="25.0" prefWidth="162.0" text="Voir les maître de stage" />
+      <Button fx:id="voirSuperviseur" layoutX="707.0" layoutY="111.0" mnemonicParsing="false" onAction="#voirInformationSuperviseur" prefHeight="25.0" prefWidth="162.0" text="Voir les superviseurs" />
+      <Button fx:id="voirStage" layoutX="615.0" layoutY="148.0" mnemonicParsing="false" onAction="#voirInformationStage" prefHeight="25.0" prefWidth="162.0" text="Voir les stages" />
+      <Label fx:id="myConnexionLabel11" layoutX="613.0" layoutY="186.0" text="Modifier ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="myQueryTextField1" layoutX="564.0" layoutY="224.0" prefHeight="25.0" prefWidth="264.0" promptText="Requête SELECT" />
    </children>
 </Pane>
