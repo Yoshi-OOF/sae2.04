@@ -1,7 +1,7 @@
 USE Groupe_23;
 CREATE ROLE Secretaire;
 
-GRANT SELECT, UPDATE ON ENTREPRISE(Nom_ent, Naf_ent, Ape_ent VARCHAR, Nom_chef_ent, Prenom_chef_ent, Adresse_chef_ent, Mail_chef_ent) TO Secretaire;
+GRANT SELECT, UPDATE ON ENTREPRISE(Nom_ent, Naf_ent, Ape_ent, Nom_chef_ent, Prenom_chef_ent, Adresse_chef_ent, Mail_chef_ent) TO Secretaire;
 GRANT SELECT, UPDATE ON MAITRE_STAGE(Nom_maitreStage, Prenom_maitreStage, Statut_maitreStage, Poste_maitreStage, Tel_maitreStage, Mail_maitreStage) TO Secretaire;
 GRANT SELECT, UPDATE ON SUPERVISEUR(Nom_superviseur, Prenom_superviseur, Statut_superviseur, Poste_superviseur, Tel_superviseur, Mail_superviseur) TO Secretaire;
 GRANT SELECT, UPDATE ON ENSEIGNANT(Nom_ensei, Prenom_ensei, Mail_ensei, Resp_stage_ensei) TO Secretaire;
