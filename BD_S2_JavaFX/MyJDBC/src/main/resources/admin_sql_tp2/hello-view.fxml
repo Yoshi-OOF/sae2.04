@@ -29,9 +29,9 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <TextField fx:id="nameTextField" layoutX="567.0" layoutY="212.0" prefHeight="25.0" prefWidth="264.0" promptText="Email de l'étudiant" />
-      <TextField fx:id="nameTextField1" layoutX="567.0" layoutY="245.0" prefHeight="25.0" prefWidth="264.0" promptText="Champ a modifier" />
-      <TextField fx:id="nameTextField11" layoutX="567.0" layoutY="277.0" prefHeight="25.0" prefWidth="264.0" promptText="Nouvelle valeur" />
-      <Button fx:id="myQueryButton1" layoutX="666.0" layoutY="309.0" mnemonicParsing="false" onAction="#executionPressEvent" text="Modifier" />
+      <TextField fx:id="etuEmailTextField" layoutX="567.0" layoutY="212.0" prefHeight="25.0" prefWidth="264.0" promptText="Email de l'étudiant" />
+      <TextField fx:id="etuChampTextField" layoutX="567.0" layoutY="245.0" prefHeight="25.0" prefWidth="264.0" promptText="Champ a modifier" />
+      <TextField fx:id="etuNouvelleValeurTextField" layoutX="567.0" layoutY="277.0" prefHeight="25.0" prefWidth="264.0" promptText="Nouvelle valeur" />
+      <Button fx:id="executeModifierEtuButton" layoutX="666.0" layoutY="309.0" mnemonicParsing="false" onAction="#executeModifierEtu" text="Modifier" />
    </children>
 </Pane>

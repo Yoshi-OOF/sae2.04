@@ -30,6 +30,15 @@ public class MyController {
     @FXML
     private Label myResultLabel;
 
+    @FXML
+    private TextField etuEmailTextField;
+
+    @FXML
+    private TextField etuChampTextField;
+
+    @FXML
+    private TextField etuNouvelleValeurTextField;
+
     private MyJDBC myJDBC=new MyJDBC("com.microsoft.sqlserver.jdbc.SQLServerDriver","jdbc:sqlserver://172.30.4.243\\LHAMON;databaseName=andreolieDB");
 
     private boolean connected=false;
@@ -89,6 +98,13 @@ public class MyController {
     void voirInformationSuperviseur(ActionEvent event)
             throws SQLException {
         String result = myJDBC.executeReadQuery("SELECT * FROM vue_secretaire_superviseur");
+        myResultLabel.setText(result);
+    }
+
+    @FXML
+    void executeModifierEtu(ActionEvent event)
+            throws SQLException {
+        String result = myJDBC.executeReadQuery("UPDATE etudiant SET "+etuChampTextField.getText()+" = '"+etuNouvelleValeurTextField.getText()+"' WHERE email = '"+etuEmailTextField.getText()+"'");
         myResultLabel.setText(result);
     }
 

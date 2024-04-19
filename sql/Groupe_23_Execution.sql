@@ -20,6 +20,6 @@ SELECT * FROM vue_secretaire_superviseur;
 USE groupe_23;
 SELECT * FROM vue_secretaire_enseignant;
 
--- Update l'étudiant n°1
+-- Modifier un étudiant
 USE groupe_23;
 UPDATE ETUDIANT SET Chemin_attes_etu = 'C:\Users\Emma\Documents\attes' WHERE Mail_etu = 'emma.bertrand.etu@univ-lemans.fr';
