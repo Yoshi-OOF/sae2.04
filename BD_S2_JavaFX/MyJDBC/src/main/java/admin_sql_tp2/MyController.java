@@ -123,6 +123,13 @@ public class MyController {
     }
 
     @FXML
+    void voirInformationEntreprise(ActionEvent event)
+            throws SQLException {
+        String result = myJDBC.executeReadQuery("SELECT Nom_ent, Naf_ent, Ape_ent, Nom_chef_ent, Prenom_chef_ent, Adresse_chef_ent, Mail_chef_ent FROM ENTREPRISE");
+        myResultLabel.setText(result);
+    }
+
+    @FXML
     void voirPanelModifEtu(ActionEvent event) {
         this.modifEtuPanel.show();
     }
