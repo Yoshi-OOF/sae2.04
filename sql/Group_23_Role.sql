@@ -41,9 +41,9 @@ CREATE VIEW vue_secretaire_note AS
 SELECT Fond_rapport_note, Forme_rapport_note, Fond_soutenance_note, Forme_soutenance_note, Jury_soutenance_note, Methode_ent_note, Travail_ent_note, Compor_ent_note
 FROM STAGE;
 
-GRANT SELECT ON vue_secretaire_maitre_stage TO Secretaire;
-GRANT SELECT ON vue_secretaire_superviseur TO Secretaire;
-GRANT SELECT ON vue_secretaire_enseignant TO Secretaire;
-GRANT SELECT ON vue_secretaire_etudiant TO Secretaire;
-GRANT SELECT ON vue_secretaire_stage TO Secretaire;
-GRANT SELECT ON vue_secretaire_note TO Secretaire;
+GRANT SELECT, UPDATE ON vue_secretaire_maitre_stage TO Secretaire;
+GRANT SELECT, UPDATE ON vue_secretaire_superviseur TO Secretaire;
+GRANT SELECT, UPDATE ON vue_secretaire_enseignant TO Secretaire;
+GRANT SELECT, UPDATE ON vue_secretaire_etudiant TO Secretaire;
+GRANT SELECT, UPDATE ON vue_secretaire_stage TO Secretaire;
+GRANT SELECT, UPDATE ON vue_secretaire_note TO Secretaire;
