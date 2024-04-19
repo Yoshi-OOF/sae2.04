@@ -32,7 +32,7 @@ public class MyController {
     private TextField myQueryTextField;
 
     @FXML
-    static public Label myResultLabel;
+    private Label myResultLabel;
 
 
 

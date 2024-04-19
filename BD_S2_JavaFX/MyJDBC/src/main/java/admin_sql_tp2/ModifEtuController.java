@@ -19,10 +19,14 @@ public class ModifEtuController {
 
     @FXML
     private TextField etuNouvelleValeurTextField;
+
+
+    @FXML
+    private Label resultLabel;
     @FXML
     void executeModifierEtu(ActionEvent event)
             throws SQLException {
-        String result = MyController.myJDBC.executeReadQuery("UPDATE etudiant SET "+etuChampTextField.getText()+" = '"+etuNouvelleValeurTextField.getText()+"' WHERE email = '"+etuEmailTextField.getText()+"'");
-        MyController.myResultLabel.setText(result);
+        String result = MyController.myJDBC.executeWriteQuery("UPDATE etudiant SET "+etuChampTextField.getText()+" = '"+etuNouvelleValeurTextField.getText()+"' WHERE Mail_etu = '"+etuEmailTextField.getText()+"'");
+        resultLabel.setText(result);
     }
 }
