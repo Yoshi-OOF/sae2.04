@@ -4,11 +4,11 @@ USE Groupe_23;
 
 CREATE TABLE ENTREPRISE(
    Siret_ent INT,
-   Nom_ent VARCHAR(20) NOT NULL,
-   Naf_ent VARCHAR(20) NOT NULL,
-   Ape_ent VARCHAR(20) NOT NULL,
-   Nom_chef_ent VARCHAR(20) NOT NULL,
-   Prenom_chef_ent VARCHAR(20) NOT NULL,
+   Nom_ent VARCHAR(50) NOT NULL,
+   Naf_ent VARCHAR(50) NOT NULL,
+   Ape_ent VARCHAR(50) NOT NULL,
+   Nom_chef_ent VARCHAR(30) NOT NULL,
+   Prenom_chef_ent VARCHAR(30) NOT NULL,
    Adresse_chef_ent VARCHAR(50),
    Mail_chef_ent VARCHAR(40) NOT NULL,
    PRIMARY KEY(Siret_ent),
