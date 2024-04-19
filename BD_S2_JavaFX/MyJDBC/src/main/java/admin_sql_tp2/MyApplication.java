@@ -26,8 +26,17 @@ public class MyApplication extends Application {
         Scene sceneModifEtuPanel = new Scene(fxmlModifEtuPanelLoader.load());
         modifEtuPanel.setScene(sceneModifEtuPanel);
 
+        Stage modifEnseiPanel = new Stage(StageStyle.DECORATED);
+        modifEnseiPanel.initModality(Modality.NONE);
+        modifEnseiPanel.initOwner(stage);
+
+        FXMLLoader fxmlModifEnseiPanelLoader = new FXMLLoader(MyApplication.class.getResource("modif_ensei.fxml"));
+        Scene sceneModifEnseiPanel = new Scene(fxmlModifEnseiPanelLoader.load());
+        modifEnseiPanel.setScene(sceneModifEnseiPanel);
+
         MyController controller = (MyController)fxmlLoader.getController();
         controller.setModifEtuPanel(modifEtuPanel);
+        controller.setModifEnseiPanel(modifEnseiPanel);
     }
 
     public static void main(String[] args) {

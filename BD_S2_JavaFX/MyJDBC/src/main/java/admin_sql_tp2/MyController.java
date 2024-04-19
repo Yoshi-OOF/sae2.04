@@ -13,6 +13,10 @@ import javafx.stage.Stage;
 public class MyController {
     @FXML
     private Stage modifEtuPanel;
+
+    @FXML
+    private Stage modifEnseiPanel;
+
     @FXML
     private Button myConnexionButton;
 
@@ -42,6 +46,10 @@ public class MyController {
 
     public void setModifEtuPanel(Stage modifetupanel) {
         this.modifEtuPanel = modifetupanel;
+    }
+
+    public void setModifEnseiPanel(Stage modifenseipanel) {
+        this.modifEnseiPanel = modifenseipanel;
     }
 
     @FXML
@@ -103,8 +111,20 @@ public class MyController {
     }
 
     @FXML
+    void voirInformationNote(ActionEvent event)
+            throws SQLException {
+        String result = myJDBC.executeReadQuery("SELECT * FROM vue_secretaire_note");
+        myResultLabel.setText(result);
+    }
+
+    @FXML
     void voirPanelModifEtu(ActionEvent event) {
         this.modifEtuPanel.show();
+    }
+
+    @FXML
+    void voirPanelModifEnsei(ActionEvent event) {
+        this.modifEnseiPanel.show();
     }
 
 }

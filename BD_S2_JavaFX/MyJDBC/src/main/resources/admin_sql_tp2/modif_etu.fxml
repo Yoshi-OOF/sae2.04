@@ -18,6 +18,6 @@
          </font>
       </Text>
       <Button layoutX="110.0" layoutY="166.0" mnemonicParsing="false" onAction="#executeModifierEtu" prefHeight="33.0" prefWidth="155.0" text="Modifier l'étudiant" />
-      <Label fx:id="resultLabel" layoutX="135.0" layoutY="212.0" text="Résultat d'exécution" />
+      <Label fx:id="resultLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="212.0" prefHeight="17.0" prefWidth="353.0" text="Résultat d'exécution" textAlignment="CENTER" />
    </children>
 </AnchorPane>
