@@ -60,14 +60,14 @@ public class MyController {
     @FXML
     void voirInformationEtudiant(ActionEvent event)
             throws SQLException {
-        String result=myJDBC.executeReadQuery("SELECT * FROM etudiant");
+        String result=myJDBC.executeReadQuery("SELECT * FROM vue_secretaire_etudiant");
         myResultLabel.setText(result);
     }
 
     @FXML
     void voirInformationEnseignant(ActionEvent event)
             throws SQLException {
-        String result=myJDBC.executeReadQuery("SELECT * FROM enseignant");
+        String result=myJDBC.executeReadQuery("SELECT * FROM vue_secretaire_enseignant");
         myResultLabel.setText(result);
     }
 
