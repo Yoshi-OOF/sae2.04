@@ -1,5 +1,6 @@
 package admin_sql_tp2;
 
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -7,8 +8,11 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.sql.SQLException;
+import javafx.event.Event;
+import javafx.stage.Stage;
 public class MyController {
-
+    @FXML
+    private Stage modifEtuPanel;
     @FXML
     private Button myConnexionButton;
 
@@ -28,20 +32,17 @@ public class MyController {
     private TextField myQueryTextField;
 
     @FXML
-    private Label myResultLabel;
+    static public Label myResultLabel;
 
-    @FXML
-    private TextField etuEmailTextField;
 
-    @FXML
-    private TextField etuChampTextField;
 
-    @FXML
-    private TextField etuNouvelleValeurTextField;
-
-    private MyJDBC myJDBC=new MyJDBC("com.microsoft.sqlserver.jdbc.SQLServerDriver","jdbc:sqlserver://172.30.4.243\\LHAMON;databaseName=andreolieDB");
+    static public MyJDBC myJDBC=new MyJDBC("com.microsoft.sqlserver.jdbc.SQLServerDriver","jdbc:sqlserver://172.30.4.243\\LHAMON;databaseName=andreolieDB");
 
     private boolean connected=false;
+
+    public void setModifEtuPanel(Stage modifetupanel) {
+        this.modifEtuPanel = modifetupanel;
+    }
 
     @FXML
     void connexionPressEvent(ActionEvent event)
@@ -102,10 +103,8 @@ public class MyController {
     }
 
     @FXML
-    void executeModifierEtu(ActionEvent event)
-            throws SQLException {
-        String result = myJDBC.executeReadQuery("UPDATE etudiant SET "+etuChampTextField.getText()+" = '"+etuNouvelleValeurTextField.getText()+"' WHERE email = '"+etuEmailTextField.getText()+"'");
-        myResultLabel.setText(result);
+    void voirPanelModifEtu(ActionEvent event) {
+        this.modifEtuPanel.show();
     }
 
 }

@@ -29,7 +29,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Button fx:id="voirStage1" layoutX="534.0" layoutY="216.0" mnemonicParsing="false" onAction="#voirInformationStage" prefHeight="25.0" prefWidth="162.0" text="Modifier un étudiant" />
-      <Button fx:id="voirStage11" layoutX="707.0" layoutY="216.0" mnemonicParsing="false" onAction="#voirInformationStage" prefHeight="25.0" prefWidth="162.0" text="Modifier un étudiant" />
+      <Button fx:id="modifEtuPanelButton" layoutX="707.0" layoutY="216.0" mnemonicParsing="false" onAction="#voirPanelModifEtu" prefHeight="25.0" prefWidth="162.0" text="Modifier un étudiant" />
+      <Button fx:id="modifEnseianelButton" layoutX="534.0" layoutY="216.0" mnemonicParsing="false" onAction="#voirInformationStage" prefHeight="25.0" prefWidth="162.0" text="Modifier un enseignant" />
    </children>
 </Pane>

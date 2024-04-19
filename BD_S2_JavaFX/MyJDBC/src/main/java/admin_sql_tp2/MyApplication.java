@@ -27,7 +27,7 @@ public class MyApplication extends Application {
         modifEtuPanel.setScene(sceneModifEtuPanel);
 
         MyController controller = (MyController)fxmlLoader.getController();
-        controller.setModifEtuPanel(modalDialog);
+        controller.setModifEtuPanel(modifEtuPanel);
     }
 
     public static void main(String[] args) {
