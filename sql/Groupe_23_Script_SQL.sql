@@ -72,7 +72,7 @@ CREATE TABLE ETUDIANT(
 CREATE TABLE STAGE(
    Id_stage INT,
    Titre_mission VARCHAR(100) NOT NULL,
-   Des_mission VARCHAR(10000) NOT NULL,
+   Des_mission VARCHAR(7000) NOT NULL,
    Date_deb_stage DATE NOT NULL,
    Date_fin_stage DATE NOT NULL,
    Grati_stage INT NOT NULL,
