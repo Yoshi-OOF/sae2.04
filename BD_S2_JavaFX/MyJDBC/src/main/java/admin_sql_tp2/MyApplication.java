@@ -3,7 +3,9 @@ package admin_sql_tp2;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -15,6 +17,17 @@ public class MyApplication extends Application {
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
+
+        Stage modifEtuPanel = new Stage(StageStyle.DECORATED);
+        modifEtuPanel.initModality(Modality.NONE);
+        modifEtuPanel.initOwner(stage);
+
+        FXMLLoader fxmlModifEtuPanelLoader = new FXMLLoader(MyApplication.class.getResource("modif_etu.fxml"));
+        Scene sceneModifEtuPanel = new Scene(fxmlModifEtuPanelLoader.load());
+        modifEtuPanel.setScene(sceneModifEtuPanel);
+
+        MyController controller = (MyController)fxmlLoader.getController();
+        controller.setModifEtuPanel(modalDialog);
     }
 
     public static void main(String[] args) {
