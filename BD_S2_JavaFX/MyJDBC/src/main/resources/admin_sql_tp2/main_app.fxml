@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin_sql_tp2.MyController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin_sql_tp2.MyController">
    <children>
       <Button fx:id="myConnexionButton" layoutX="338.0" layoutY="66.0" mnemonicParsing="false" onAction="#connexionPressEvent" text="Connexion" />
       <Button fx:id="myQueryButton" layoutX="341.0" layoutY="123.0" mnemonicParsing="false" onAction="#executionPressEvent" text="Execution" />
@@ -29,10 +29,11 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Button fx:id="modifEtuPanelButton" layoutX="704.0" layoutY="244.0" mnemonicParsing="false" onAction="#voirPanelModifEtu" prefHeight="25.0" prefWidth="162.0" text="Modifier un étudiant" />
-      <Button fx:id="modifEnseianelButton" layoutX="531.0" layoutY="244.0" mnemonicParsing="false" onAction="#voirPanelModifEnsei" prefHeight="25.0" prefWidth="162.0" text="Modifier un enseignant" />
+      <Button fx:id="modifEtuPanelButton" layoutX="704.0" layoutY="244.0" mnemonicParsing="false" onAction="#voirPanelModifEtu" prefHeight="25.0" prefWidth="173.0" text="Modifier un étudiant" />
+      <Button fx:id="modifEnseianelButton" layoutX="520.0" layoutY="244.0" mnemonicParsing="false" onAction="#voirPanelModifEnsei" prefHeight="25.0" prefWidth="173.0" text="Modifier un enseignant" />
       <Button fx:id="voirStage1" layoutX="707.0" layoutY="148.0" mnemonicParsing="false" onAction="#voirInformationNote" prefHeight="25.0" prefWidth="162.0" text="Voir les notes" />
-      <Button fx:id="modifEntPanelButton" layoutX="531.0" layoutY="279.0" mnemonicParsing="false" onAction="#voirPanelModifEnt" prefHeight="25.0" prefWidth="162.0" text="Modifier une entreprise" />
+      <Button fx:id="modifEntPanelButton" layoutX="520.0" layoutY="279.0" mnemonicParsing="false" onAction="#voirPanelModifEnt" prefHeight="25.0" prefWidth="173.0" text="Modifier une entreprise" />
       <Button fx:id="voirStage2" layoutX="618.0" layoutY="183.0" mnemonicParsing="false" onAction="#voirInformationEntreprise" prefHeight="25.0" prefWidth="162.0" text="Voir les entreprises" />
+      <Button fx:id="modifMaitreStagePanelButton" layoutX="704.0" layoutY="279.0" mnemonicParsing="false" onAction="#voirPanelModifMaitreStage" prefHeight="25.0" prefWidth="173.0" text="Modifier un maitre de stage" />
    </children>
 </Pane>
