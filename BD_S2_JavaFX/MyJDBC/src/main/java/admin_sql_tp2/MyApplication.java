@@ -46,7 +46,7 @@ public class MyApplication extends Application {
         modifMaitreStagePanel.initModality(Modality.NONE);
         modifMaitreStagePanel.initOwner(stage);
 
-        FXMLLoader fxmlModifMaitreStagePanelLoader = new FXMLLoader(MyApplication.class.getResource("modif_maitre_stage.fxml"));
+        FXMLLoader fxmlModifMaitreStagePanelLoader = new FXMLLoader(MyApplication.class.getResource("modif_maitrestage.fxml"));
         Scene sceneModifMaitreStagePanel = new Scene(fxmlModifMaitreStagePanelLoader.load());
         modifMaitreStagePanel.setScene(sceneModifMaitreStagePanel);
         
