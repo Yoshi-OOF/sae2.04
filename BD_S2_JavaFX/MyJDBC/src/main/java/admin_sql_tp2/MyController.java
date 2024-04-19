@@ -138,6 +138,7 @@ public class MyController {
 
     @FXML
     void voirInformationEntreprise(ActionEvent event)
+    // Nous n'avons pas créé de vue pour les entreprises donc on met juste les attributs de l'entreprise ici
             throws SQLException {
         String result = myJDBC.executeReadQuery("SELECT Nom_ent, Naf_ent, Ape_ent, Nom_chef_ent, Prenom_chef_ent, Adresse_chef_ent, Mail_chef_ent FROM ENTREPRISE");
         myResultLabel.setText(result);
