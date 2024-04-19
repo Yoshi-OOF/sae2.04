@@ -21,6 +21,7 @@ public class ModifEntController {
 
     @FXML
     void executeModifierEnt(ActionEvent event)
+    // Nous n'avons pas créé de vue pour les entreprises donc on met juste entreprise ici
             throws SQLException {
         String result = MyController.myJDBC.executeWriteQuery("UPDATE entreprise SET "+entChampTextField.getText()+" = '"+entNouvelleValeurTextField.getText()+"' WHERE Mail_chef_ent = '"+entEmailTextField.getText()+"'");
         resultLabel.setText(result);

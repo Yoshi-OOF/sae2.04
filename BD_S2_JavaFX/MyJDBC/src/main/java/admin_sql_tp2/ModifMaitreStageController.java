@@ -24,7 +24,7 @@ public class ModifMaitreStageController {
     @FXML
     void executeModifierMaitreStage(ActionEvent event)
             throws SQLException {
-        String result = MyController.myJDBC.executeWriteQuery("UPDATE MAITRE_STAGE SET "+maitreStageChampTextField.getText()+" = '"+maitreStageNouvelleValeurTextField.getText()+"' WHERE Mail_maitreStage = '"+maitreStageEmailTextField.getText()+"'");
+        String result = MyController.myJDBC.executeWriteQuery("UPDATE vue_secretaire_maitre_stage SET "+maitreStageChampTextField.getText()+" = '"+maitreStageNouvelleValeurTextField.getText()+"' WHERE Mail_maitreStage = '"+maitreStageEmailTextField.getText()+"'");
         resultLabel.setText(result);
     }
 }

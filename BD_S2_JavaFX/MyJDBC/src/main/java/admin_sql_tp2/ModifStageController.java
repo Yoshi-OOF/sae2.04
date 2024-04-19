@@ -24,7 +24,7 @@ public class ModifStageController {
     @FXML
     void executeModifierEtu(ActionEvent event)
             throws SQLException {
-        String result = MyController.myJDBC.executeWriteQuery("UPDATE etudiant SET "+etuChampTextField.getText()+" = '"+etuNouvelleValeurTextField.getText()+"' WHERE Mail_etu = '"+etuEmailTextField.getText()+"'");
+        String result = MyController.myJDBC.executeWriteQuery("UPDATE vue_secretaire_stage SET "+etuChampTextField.getText()+" = '"+etuNouvelleValeurTextField.getText()+"' WHERE Mail_etu = '"+etuEmailTextField.getText()+"'");
         resultLabel.setText(result);
     }
 }

@@ -22,7 +22,7 @@ public class ModifEnseiController {
     @FXML
     void executeModifierEnsei(ActionEvent event)
             throws SQLException {
-        String result = MyController.myJDBC.executeWriteQuery("UPDATE enseignant SET "+enseiChampTextField.getText()+" = '"+enseiNouvelleValeurTextField.getText()+"' WHERE Mail_ensei = '"+enseiEmailTextField.getText()+"'");
+        String result = MyController.myJDBC.executeWriteQuery("UPDATE vue_secretaire_enseignant SET "+enseiChampTextField.getText()+" = '"+enseiNouvelleValeurTextField.getText()+"' WHERE Mail_ensei = '"+enseiEmailTextField.getText()+"'");
         resultLabel.setText(result);
     }
 }
